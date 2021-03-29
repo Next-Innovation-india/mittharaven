@@ -1,0 +1,73 @@
+
+<!doctype html>
+
+<!--
+  this is the mittha raven site
+  Author:
+     Akansha okay chalo sankalp aur riddhi tum log ka bhi contribute tha but thodasa hi xD
+
+  Patreon:
+    If you enjoyed this, please support me on Patreon!
+    nextinnovetion.cf
+-->
+
+<html>
+<head>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
+        'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
+        sans-serif;
+      overflow: hidden;
+    }
+    .hello-message {
+      margin: 40px;
+      text-align: center;
+    }
+    .logout-messages {
+      pointer-events: none;
+      color: red;
+      margin: 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      text-shadow: 2px 2px #FFF, 4px 4px 10px #000;
+    }
+    img {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+<template>
+  <div class='hello-message'>
+    <h1>Author:
+     Akansha okay chalo sankalp aur riddhi tum log ka bhi contribute tha but thodasa hi xD</h1>
+    <h1>Hi there! Mitthe Raven ke darbar mai ap ka swagat hai</h1>
+    <h2>To get started, HOLD DOWN the space key for 3 seconds.</h2>
+    <h3>(or, on mobile, tap mittha raven's photu xD!)</h3>
+
+    <img src='/ravem.jpg' alt='Mittha raven' />
+  </div>
+  <div class='logout-messages'></div>
+</template>
+<h1>hello</h1>
+
+<script src='/connect.js'></script>
+
+<script async src='https://www.googletagmanager.com/gtag/js?id=UA-3898076-24'></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag () {
+    window.dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+  gtag('config', 'UA-3898076-24')
+</script>
+
+</body>
+</html>
